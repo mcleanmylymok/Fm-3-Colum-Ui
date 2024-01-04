@@ -1,0 +1,142 @@
+
+:root {
+    /* Colors */
+    --clr-Primary: hsl(31, 77%, 52%);
+    --clr-seccondary: hsl(184, 100%, 22%);
+    --clr-tertiary: hsl(179, 100%, 13%);
+    --clr-white: hsla(0, 0%, 100%, 0.75);
+    --clr-grey: hsl(0, 0%, 95%);
+
+    /* Type */
+    /* Sizes */
+    --fs-heading: 3rem;
+    --fs-body: 1rem;
+    --line-height: 1.3125rem;
+
+    /* Sizing */
+    --size-text: 2rem;
+    --size-card: 4vw;
+    --margin-bottom: 1.5rem;
+}
+/* Utility Classes */
+.bg-primary {
+    background-color: var(--clr-Primary);
+}
+.txt-primary {
+    color: var(--clr-Primary);
+}
+.bg-seccondary {
+    background-color: var(--clr-seccondary);
+}
+.txt-seccondary {
+    color: var(--clr-seccondary);
+}
+.bg-tertiary {
+    background-color: var(--clr-tertiary);
+}
+.txt-tertiary {
+    color: var(--clr-tertiary);
+}
+.bg-grey {
+    background-color: var(--clr-grey);
+}
+.txt-grey {
+    color: var(--clr-grey);
+}
+.bg-white {
+    background-color: var(--clr-white);
+}
+.txt-white {
+    color: var(--clr-white);
+}
+.font-heading {
+    font-family: var(--ff-heading);
+}
+.font.body {
+    font-family: var(--ff-body);
+}
+.font-size-heading {
+    font-size: var(--fs-heading);
+}
+.font-size-body {
+    font-size: var(--fs-body);
+}
+.card-spacing {
+    padding: var(--size-card);
+}
+.txt-spacing {
+    padding: var(--size-text);
+}
+.margin-bottom {
+    margin-bottom: var(--margin-bottom);
+}
+
+/* Reset */
+*,*::before,*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: var(--clr-grey);
+    line-height: var(--line-height);
+    line-height: 2;
+}
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(cl);
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Big Shoulders Display', sans-serif;
+}
+img {
+    display: 100%;
+}
+ul,li {
+    list-style: none;
+}
+section {
+    padding: 10vw;
+}
+/* Components */
+.container {
+    padding-inline: 2em;
+    margin-inline: auto;
+    max-width: 80rem;
+}
+.btn {
+    cursor: pointer;
+    background-color: var(--clr-grey);
+    padding: 1em 1.6em;
+    border-radius: 100vh;
+}
+.btn:hover, .btn:focus {
+    background-color: transparent;
+   color: var(--clr-grey);
+   border: 3px var(--clr-grey) solid; 
+}
+/* Card ui */
+.card-row {
+    display: flex;
+}
+.card h3 p {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card > a {
+    margin-top: 5rem;
+}
+@media screen and (max-width: 600px) {
+    .card-row {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 950px) {
+    .card-row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
